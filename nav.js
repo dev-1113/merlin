@@ -6,7 +6,7 @@ document.write('<nav class="navbar navbar-inverse">\
       <ul class="dropdown-menu">\
         <li><a href="https://dev-1113.github.io/merlin/results-summary/index.html">Results Summary</a></li>\
         <li><a href="https://dev-1113.github.io/merlin/product/index.html">Product Preview</a></li>\
-        <li><a href="https://dev-1113.github.io/merlin/interactive-rating-component-main/index.html">JInteractive Rating</a></li>\
+        <li><a href="https://dev-1113.github.io/merlin/interactive-rating-component-main/index.html">Interactive Rating</a></li>\
       </ul>\
     </li>\
     <li><a href="#">UNI Project</a></li>\
