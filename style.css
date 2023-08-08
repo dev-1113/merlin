@@ -3,6 +3,10 @@
     border-color: #080808;
 }
 
+img {
+    height: 200px;
+}
+
 .welcome {
     font-size: 24px;
 }
