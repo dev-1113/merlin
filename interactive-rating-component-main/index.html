@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">	
+  <link rel="stylesheet" href="inter.css">	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="jquery-3.7.0.js"></script>  
+  <title>Interactive rating component</title>
+</head>
+<body>
+<script src="https://dev-1113.github.io/merlin/nav.js"></script>
+	<div class="wrapper">
+		<div class="main">
+			<div class="circle">
+				<div class="star">	
+					<img src="./images/icon-star.svg">
+				</div>
+			</div>
+		
+		<!-- Rating state start -->
+	
+		<div class="how">
+			How did we do?
+		</div>
+		
+		<div class="please">
+			Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+		</div>
+		
+		<div class="ratings">
+			<button class="rating-btn">1</button>
+			<button class="rating-btn">2</button>
+			<button class="rating-btn">3</button>
+			<button class="rating-btn">4</button>
+			<button class="rating-btn">5</button>
+		</div>
+
+  
+		<button class="submit">SUBMIT</button>
+			
+		</div>
+		
+		<div class="thank_you">
+		<div class="image">
+			<img src="./images/illustration-thank-you.svg">
+		</div>
+		<div class="you_selected">
+			You selected <span class="rating-number"></span> out of 5
+		</div>
+		<div class="thank_you_message">
+			Thank you!
+		</div>
+		<div class="apprec">
+			We appreciate you taking the time to give a rating. If you ever need more support,don’t hesitate to get in touch!
+		</div>
+	</div>
+		
+	</div>
+</body>
+</html>
+<script>
+
+<!-- Function to get the number rating -->
+
+var ratingNum;
+var arr1 = new Array();
+
+$("button.rating-btn").on("click", function(event) {
+
+	ratingNum = this.innerHTML;
+	arr1.unshift(ratingNum);
+	$(this).css({"background" : "hsl(25, 97%, 53%)", "color" : "hsl(0, 0%, 100%)"}); 
+	console.log(ratingNum);
+	if (arr1.length > 1) {
+		$("button.rating-btn").css({"background" : "", "color" : ""});
+		arr1.pop();
+	}	
+	$(this).css({"background" : "hsl(25, 97%, 53%)", "color" : "hsl(0, 0%, 100%)"});
+
+});
+
+<!-- Function for the pop-up Thank You -->
+	
+$("button.submit").on("click", function(event) {
+
+	$("div.main").remove();
+	$("div.thank_you").css("visibility", "visible")
+	$("span.rating-number").html(ratingNum)	
+
+});
+
+</script>

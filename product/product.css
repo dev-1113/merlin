@@ -1,0 +1,110 @@
+.navbar-inverse {
+    background-color: #9f2626;
+    border-color: #080808;
+}
+
+
+.wrapper {
+		display: inline-flex;
+	}
+
+	.left {
+		width: 280px;
+		height: 420px;
+		background-image: url(./images/image-product-desktop.jpg);
+		background-repeat: no-repeat;
+		border: 1px solid white;
+		border-radius: 10px 0px 0px 10px; 
+	}
+
+	.right {
+		width: 280px;
+		background-color: hsl(30, 38%, 92%);
+		display: grid;
+		grid-template-columns: 10% 80% 10%;  
+		grid-template-rows: 5% 5% 5% 25% 3% 22% 5% 10% 5% 10% 5%;
+		border: 1px solid white;
+		border-radius: 0px 10px 10px 0px; 
+	}
+	
+	.product {
+		grid-column: 2;
+		grid-row: 2;
+		font-family: "Consolas";
+		font-size: 18px;
+	}
+	
+	.product_FR {
+		grid-column: 2;
+		grid-row: 4;
+		font-family: "Georgia";
+		font-size: 28px;	
+}
+
+	.product_desc {
+		grid-column: 2;
+		grid-row: 6;
+		font-family: "Verdana";
+		font-size: 14px;
+		line-height: 23px;
+}
+
+	.product_price {
+		grid-column: 2;
+		grid-row: 8;
+		font-family: "Consolas";
+		font-size: 30px;
+		color: hsl(158, 36%, 37%);
+	}
+
+	.right button {
+		grid-column: 2;
+		grid-row: 10;
+		font-family: "Verdana";
+		font-size: 14px;
+		color: hsl(30, 38%, 92%);	
+		background-color: hsl(158, 36%, 37%);
+		border-radius: 10px 10px 10px 10px;	
+		border: 1px solid hsl(158, 36%, 50%);
+	}
+	
+	.right button:hover{
+		grid-column: 2;
+		grid-row: 10;
+		font-family: "Verdana";
+		font-size: 14px;
+		color: hsl(30, 38%, 92%);	
+		background: hsl(212, 21%, 14%);
+		border-radius: 10px 10px 10px 10px;	
+		border: 1px solid hsl(212, 21%, 14%);
+		cursor: pointer;
+}
+
+
+@media screen and (max-width: 375px) {
+
+	.wrapper {
+		display: block;
+	}
+
+	.left {
+		width: 375px;
+		height: 262px;
+		background-image: url(./images/image-product-mobile.jpg);
+		background-repeat: no-repeat;
+	/* top-left | top-right | bottom-right | bottom-left */
+		border: 1px solid white;
+		border-radius: 10px 10px 0px 0px;
+	}	
+	
+	.right {
+		width: 375px;
+		height: 333px;
+		background-color: hsl(30, 38%, 92%);
+		display: grid;
+		grid-template-columns: 10% 80% 10%;  
+		grid-template-rows: 5% 5% 3% 22% 5% 20% 10% 10% 5% 10% 5%;
+		border: 1px solid white;
+		border-radius: 0px 0px 10px 10px; 
+	}
+}
