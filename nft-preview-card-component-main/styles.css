@@ -1,4 +1,9 @@
 /* top-left | top-right | bottom-right | bottom-left */
+
+.navbar-inverse {
+    background-color: #9f2626;
+    border-color: #080808;
+}
 	
 	.main {
 		width: 334px;

@@ -1,4 +1,9 @@
-	.wrapper {
+    .navbar-inverse {
+        background-color: #9f2626;
+        border-color: #080808;
+    }
+
+    .wrapper {
 		display: inline-flex;
 		border-radius: 10px 10px 10px 10px;	
 		border: 1px solid #c7b5b5;

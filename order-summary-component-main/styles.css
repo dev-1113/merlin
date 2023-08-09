@@ -1,5 +1,10 @@
 /* top-left | top-right | bottom-right | bottom-left */
 
+.navbar-inverse {
+    background-color: #9f2626;
+    border-color: #080808;
+}
+
 	body {
 		background-image: url(./images/pattern-background-desktop.svg);
 		background-repeat: no-repeat;
