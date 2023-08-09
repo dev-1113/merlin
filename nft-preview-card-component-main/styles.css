@@ -1,0 +1,144 @@
+/* top-left | top-right | bottom-right | bottom-left */
+	
+	.main {
+		width: 334px;
+		height: 600px;
+		background-color: hsl(217, 54%, 11%);
+		border-radius: 10px 10px 10px 10px;	
+		border: 1px solid #221a1a;
+		display: grid;
+		grid-template-columns: 5% 90% 5%;  
+		grid-template-rows: 3% 50% 4% 6% 2% 10% 2% 6% 2% 2% 2% 14%;
+ 	}
+	
+	.cube_image {
+		grid-column: 2;
+		grid-row: 2;
+		background-size: cover;
+		background-image: url(./images/image-equilibrium.jpg);
+		background-repeat: no-repeat;
+		border-radius: 10px 10px 10px 10px; 
+	}
+	
+	.overlay {
+		position: absolute;
+		width: 300px;
+		height: 300px;
+		opacity: 0;
+		transition: .3 ease;
+		background-color: hsl(178, 100%, 50%);
+		cursor: pointer;
+		border-radius: 10px; 
+	}
+	
+	.icon {
+		width: 300px;
+		height: 300px;
+		background-image: url(./images/icon-view.svg);
+		background-repeat: no-repeat;
+		background-position-x: center;
+		background-position-y: center;
+	}
+	
+	.cube_image:hover .overlay {
+		opacity: 0.5;
+	}
+	
+	.equ {
+		grid-column: 2;
+		grid-row: 4;
+		color: hsl(0, 0%, 100%);
+		font-family: "Georgia";
+		font-size: 24px;		
+	}
+	
+	.equ:hover {
+		color : hsl(178, 100%, 50%);
+		cursor: pointer;		
+	}
+	
+	.our {
+		grid-column: 2;
+		grid-row: 6;	
+		color: hsl(215, 51%, 70%);
+		font-family: "Georgia";
+		font-size: 18px;	
+		line-height: 25px;
+	}
+	
+	.wrapper {
+		grid-column: 2;
+		grid-row: 8;
+		display: grid;
+		grid-template-columns: 5% 37% 28% 5% 25%;
+		align-items: center;
+	}
+	
+	.eth_icon {
+		grid-column: 1;
+		grid-row: 1;		
+	}
+	
+	.eth {
+		grid-column: 2;
+		grid-row: 1;
+		color: hsl(178, 100%, 50%);
+		font-family: "Sylfaen";
+		font-size: 18px;
+		padding-bottom: 3px;		
+	}
+	
+	.days_icon {
+		grid-column: 4;
+		grid-row: 1;		
+	}
+	
+	.days {
+		grid-column: 5;
+		grid-row: 1;	
+		color: hsl(215, 51%, 70%);
+		font-family: "Sylfaen";
+		font-size: 16px;
+		padding-bottom: 3px;
+	}
+	
+	.line {
+		grid-column: 2;
+		grid-row: 10;
+		color: hsl(178, 100%, 50%);		
+	}
+	
+	.wrapper-1 {
+		grid-column: 2;
+		grid-row: 12;
+		display: grid;
+		grid-template-columns: 50px 1fr;
+	}
+	
+	.icon img{
+		grid-column: 1;
+		grid-row: 1;
+		width: 35px;
+		height: 35px;
+		border-radius: 100%;
+		border: 1px solid hsl(0, 0%, 100%);
+	}
+	
+	.creation {
+		grid-column: 2;
+		grid-row: 1;
+		color: hsl(215, 51%, 70%);
+		font-family: "Georgia";
+		font-size: 15px;
+		padding-top: 8px;		
+	}
+	
+	span {
+		color : hsl(0, 0%, 100%);
+	}
+	
+	span:hover {
+		color : hsl(178, 100%, 50%);
+		cursor: pointer;		
+	}
+	

@@ -1,0 +1,55 @@
+	.wrapper {
+		display: inline-flex;
+		border-radius: 10px 10px 10px 10px;	
+		border: 1px solid #c7b5b5;
+	}
+	/* top-left | top-right | bottom-right | bottom-left */
+	
+	.main {
+		width: 576px;
+		height: 820px;
+		text-align: center;
+		background-color: hsl(0, 0%, 100%);
+		border-radius: 10px 10px 10px 10px;	
+		border: 1px solid hsl(0, 0%, 100%);
+		display: grid;
+		grid-template-columns: 5% 90% 5%;  
+		grid-template-rows: 3% 66% 3% 10% 3% 12% 3%;
+ 	}
+	
+	.qr_image {
+		grid-column: 2;
+		grid-row: 2;
+		background-size: cover;
+		background-image: url(./images/image-qr-code.png);
+		background-repeat: no-repeat;
+		border: 1px solid white;
+		border-radius: 10px 10px 10px 10px; 
+	}
+	
+	.improve {
+		grid-column: 2;
+		grid-row: 4;
+		font-family: "Georgia";
+		font-size: 40px;
+		color: hsl(218, 44%, 22%);
+	}
+	
+	.scan_qr {
+		grid-column: 2;
+		grid-row: 6;
+		color: hsl(220, 15%, 55%);
+		font-family: "Georgia";
+		font-size: 30px;
+		line-height: 36px;
+	}
+	
+
+
+@media screen and (max-width: 375px) {
+
+	.wrapper {
+		display: block;
+	}
+
+}
