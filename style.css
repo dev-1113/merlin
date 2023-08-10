@@ -3,10 +3,28 @@
     border-color: #080808;
 }
 
-img {
-    height: 200px;
+img.home {
+    width: 25%;
+    height: auto;
 }
 
 .welcome {
     font-size: 24px;
+}
+
+.project_container {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    align-items: center;
+    justify-items: center;
+    text-align: center; 
+}
+
+.project_center {
+    grid-column: 2;
+}
+
+img.golfshop {
+    width: 100%;
+    height: auto;   
 }
