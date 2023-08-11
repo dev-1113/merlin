@@ -14,6 +14,7 @@ document.write('<nav class="navbar navbar-inverse">\
     </li>\
     <li><a href="https://dev-1113.github.io/merlin/project.html">UNI Project</a></li>\
     <li><a href="https://dev-1113.github.io/merlin/taxishare.html">Taxi Sharing App</a></li>\
+    <li><a href="https://dev-1113.github.io/merlin/modal-gallery/gallery.html">Modal Gallery</a></li>\
   </ul>\
 </div>\
 </nav>\
