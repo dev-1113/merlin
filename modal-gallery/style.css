@@ -1,3 +1,8 @@
+.navbar-inverse {
+    background-color: #9f2626;
+    border-color: #080808;
+}
+
 .gallery {
 	display: grid;
 	grid-template-columns: 200px 200px;
