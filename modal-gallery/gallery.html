@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Modal Gallery</title>
+  <title>Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -10,16 +10,15 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-<script src="https://dev-1113.github.io/merlin/nav.js"></script>
 	<div class="gallery">
 		<div>
 			<img id="1" src="bird1.jpg" height="200px" width="200px">
 		</div>
 		<div>
-			<img id="2" src="bird2.jpg" height="200px" width="200px">
+			<img id="2"src="bird2.jpg" height="200px" width="200px">
 		</div>
 		<div>
-			<img id="3" src="bird3.jpg" height="200px" width="200px">
+			<img id="3"src="bird3.jpg" height="200px" width="200px">
 		</div>
 		<div>
 			<img id="4" src="bird4.jpg" height="200px" width="200px">
@@ -29,7 +28,7 @@
 <div id="myModal" class="modal">
   <!-- Modal content -->
   <div class="modal-content">
-      <span class="modal-close">&times;</span>
+      <span class="close">&times;</span>
 	      <div class="modal-body">
 			<img id="modal-image" src="">
 		  </div>
@@ -41,7 +40,7 @@
 
 var modal = document.getElementById("myModal");
 let modalImage = document.getElementById("modal-image");
-var span = document.getElementsByClassName("modal-close")[0];
+var span = document.getElementsByClassName("close")[0];
 
 function addListener(event, obj, fn) {
 	obj.addEventListener(event, fn, false);
