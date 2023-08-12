@@ -1,6 +1,7 @@
 	/* top-left | top-right | bottom-right | bottom-left */	
+   
 
-    .navbar-inverse {
+.navbar-inverse {
         background-color: #9f2626;
         border-color: #080808;
     }
@@ -17,7 +18,6 @@
 	
 	body {
 		min-height: 96vh;
-		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
@@ -25,13 +25,22 @@
 	.card {
 		max-width: 900px;
 	}
-	
+
+
 	.container {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		border-radius: 10px;
 		border: 1px solid white;	
 	}
+
+.container::before {
+    content: none;
+} 
+
+.container::after {
+    content: none;
+} 
 	
 	.sedan {
 		background-color: var(--Bright-orange);

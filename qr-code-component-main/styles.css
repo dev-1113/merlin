@@ -11,32 +11,34 @@
 	/* top-left | top-right | bottom-right | bottom-left */
 	
 	.main {
-		width: 576px;
-		height: 820px;
+		width: 338px;
+		height: 520px;
 		text-align: center;
 		background-color: hsl(0, 0%, 100%);
 		border-radius: 10px 10px 10px 10px;	
 		border: 1px solid hsl(0, 0%, 100%);
 		display: grid;
 		grid-template-columns: 5% 90% 5%;  
-		grid-template-rows: 3% 66% 3% 10% 3% 12% 3%;
+		grid-template-rows: 3% 58% 5% 10% 3% 11% 10%;
  	}
 	
 	.qr_image {
 		grid-column: 2;
 		grid-row: 2;
-		background-size: cover;
-		background-image: url(./images/image-qr-code.png);
-		background-repeat: no-repeat;
-		border: 1px solid white;
-		border-radius: 10px 10px 10px 10px; 
 	}
+
+    .image {
+        width: 300px;
+        height: auto;
+		border-radius: 10px 10px 10px 10px;	
+		border: 1px solid white;
+    }
 	
 	.improve {
 		grid-column: 2;
 		grid-row: 4;
 		font-family: "Georgia";
-		font-size: 40px;
+		font-size: 24px;
 		color: hsl(218, 44%, 22%);
 	}
 	
@@ -45,8 +47,8 @@
 		grid-row: 6;
 		color: hsl(220, 15%, 55%);
 		font-family: "Georgia";
-		font-size: 30px;
-		line-height: 36px;
+		font-size: 17px;
+		line-height: 27px;
 	}
 	
 

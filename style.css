@@ -3,12 +3,39 @@
     border-color: #080808;
 }
 
-img.home {
-    width: 25%;
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 65% 20%;
+    align-items: center;
+    justify-items: center;
+    text-align: center; 
+}
+
+.container::before {
+    content: none;
+} 
+
+.container::after {
+    content: none;
+} 
+
+.container h1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+img {
+    grid-column: 1;
+    grid-row: 2;
+    max-width: 200px;
     height: auto;
 }
 
 .welcome {
+    grid-column: 1;
+    grid-row: 3;
     font-size: 24px;
 }
 
@@ -27,4 +54,18 @@ img.home {
 img.golfshop {
     max-width: 100%;
     height: auto;   
+}
+
+@media screen and (max-width: 375px) {
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 65% 20%;
+    align-items: center;
+    justify-items: center;
+    text-align: center; 
+}
+
 }

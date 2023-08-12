@@ -7,13 +7,13 @@
 	
 	.main {
 		width: 334px;
-		height: 600px;
+		height: 590px;
 		background-color: hsl(217, 54%, 11%);
 		border-radius: 10px 10px 10px 10px;	
 		border: 1px solid #221a1a;
 		display: grid;
 		grid-template-columns: 5% 90% 5%;  
-		grid-template-rows: 3% 50% 4% 6% 2% 10% 2% 6% 2% 2% 2% 14%;
+		grid-template-rows: 3% 51% 4% 6% 2% 10% 2% 6% 2% 2% 2% 10%;
  	}
 	
 	.cube_image {
@@ -120,7 +120,7 @@
 		grid-template-columns: 50px 1fr;
 	}
 	
-	.icon img{
+	.avatar img{
 		grid-column: 1;
 		grid-row: 1;
 		width: 35px;
