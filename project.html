@@ -13,32 +13,40 @@
 <script src="https://dev-1113.github.io/merlin/nav.js"></script>
         <div class="project_container">
             <div class="project_center">
+                <p>For the Final Project I created an E-Shop; <strong>Front-End: HTML, CSS, JavaScript, Ajax and Bootstrap. Back-End: PHP, SQL and a MariaDB.</strong> Obviously I cannot publish the full body of work but the following screenshots give a tour of some of the site.</p>
                 <h2>Golf Shop Home</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Home page for the Golf Shop showing different categories of items for sale. A simple user interface is built from HTML and CSS. When a user hovers over a category the border and text change colour helping to distinguish user selection.</p>
                 <img src="screenshots/golfshop.png" class="golfshop">
                 <hr>
                 <h2>Product Range</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>A user has navigated to the Product Range (Driver) page. The ‘FILTERS’ menu uses PHP and SQL to dynamically display filter attributes of the products (loft and flex). When a user clicks a radio button the onChange element in the HTML calls a JavaScript function. Within this function JavaScript with help from AJAX builds a query string that is sent to a PHP page that then selects an SQL statement which displays the filtered products without reloading the webpage. </p>
                 <img src="screenshots/product_range.png" class="golfshop">
                 <hr>
-                <h2>Product Information</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h2>Product Description</h2>
+                <p>The user clicks on a product (a Callaway Driver) from the Product Range webpage and is presented with information describing the product selected. This page uses HTML, CSS and JavaScript and can be broken down into three sections:</p>
+                    <ol>
+                    <li>The main image and slideshow images. A JavaScript function lets the user view a different image of the product. A rollover aspect focuses on selected images and greys out non selected images for better user interaction.</li>
+
+                    <li>The customisation of the product (‘VIEW CUSTOM FIT OPTIONS’ button). A JavaScript function shows and hides more drop-down option menus should a user want a more customized product.</li> 
+
+                    <li>Product descriptions. A JavaScript function on the tab menus focuses on the description selected and greys out the other menu items. The information displayed in each menu item uses a PHP file handling function that is linked to a text file for that specific description.</li> 
+                    </ol>
                 <img src="screenshots/product_info.png" class="golfshop">
                 <hr>
-                <h2>Product Information Responsive</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h2>Product Description Responsive</h2>
+                <p>The description webpage is also coded so it can work on a mobile device. The picture below (has been edited so it reads from left to right) shows the page on a screen size of 300 pixels wide. </p>   
                 <img src="screenshots/product_info_res.png" class="golfshop">
                 <hr>    
-                <h2>Admin Sales</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <img src="screenshots/sales_900px.png" class="golfshop">
+                <h2>Admin Section</h2>
+                <p>To update and manage the shop an Admin Section was created. A user has CRUD operations on all Products for sale and also has these operations for managing Stock Inventory, Customer Orders and Sales Data.</p>
+                <img src="screenshots/admin.png" class="golfshop">
                 <hr>     
-                <h2>Log-in Page</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h2>Change Password</h2>
+                <p>For the Change Password webpage, I used a Bootstrap JavaScript library which gives the page a professional style and design. A user inputs their new password twice, the first input box to create the second to confirm. On pressing the Submit button the passwords are validated by checking the password criteria has been met. If successful the new password is hashed by the password_hash() function and updated to the database. </p>
                 <img src="screenshots/newpassword.png" class="golfshop">
                 <hr>    
-                <h2>Log-in Page-error</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h2>Change Password-error</h2>
+                <p>If the password doesn’t meet the password criteria or the two passwords do not match an error message is displayed and the user must fill in the form until they are successful. </p>
                 <img src="screenshots/newpassword_un.png" class="golfshop">
                 <hr>                   
             </div>         
